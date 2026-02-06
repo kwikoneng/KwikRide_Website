@@ -307,59 +307,127 @@
             <div class="order-1 lg:order-2 flex justify-center relative scroll-trigger">
                 <!-- Phone Frame -->
                 <div
-                    class="relative w-[300px] h-[600px] bg-black rounded-[40px] border-8 border-slate-900 shadow-2xl overflow-hidden ring-4 ring-slate-200/50">
-                    <!-- Notch -->
-                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-20"></div>
+                    class="relative w-[300px] h-[600px] bg-slate-900 rounded-[40px] border-8 border-slate-900 shadow-2xl overflow-hidden ring-4 ring-slate-200/50">
+                    <!-- Dynamic Island/Notch -->
+                    <div
+                        class="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-7 bg-black rounded-full z-30 flex items-center justify-center gap-2 px-3">
+                        <div class="w-1 h-1 rounded-full bg-green-500 animate-pulse"></div>
+                    </div>
 
                     <!-- Screen Content -->
-                    <div class="w-full h-full bg-slate-50 relative flex flex-col">
-                        <!-- Top Bar -->
-                        <div class="h-20 bg-brand-primary/10 px-6 pt-10 flex justify-between items-center">
-                            <div class="w-8 h-8 rounded-full bg-slate-200"></div>
-                            <div class="w-20 h-4 rounded-full bg-slate-200"></div>
+                    <div class="w-full h-full bg-slate-50 relative flex flex-col font-sans">
+
+                        <!-- Status Bar -->
+                        <div
+                            class="h-12 px-6 flex justify-between items-end pb-2 bg-white/80 backdrop-blur z-20 text-xs font-bold text-slate-800">
+                            <span>9:41</span>
+                            <div class="flex gap-1.5">
+                                <span>5G</span>
+                                <div class="w-4 h-2.5 border border-slate-800 rounded-sm relative">
+                                    <div class="absolute inset-0.5 bg-slate-800"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Top Floating UI -->
+                        <div class="absolute top-16 left-4 right-4 z-20">
+                            <div
+                                class="bg-brand-dark/90 backdrop-blur text-white p-3 rounded-2xl flex items-center gap-3 shadow-lg animate-fade-in-up">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center font-bold text-xs">
+                                    GO</div>
+                                <div class="flex-1">
+                                    <div class="text-xs text-slate-300">Arriving in</div>
+                                    <div class="font-bold">2 mins</div>
+                                </div>
+                                <div class="text-xs bg-white/20 px-2 py-1 rounded">On Time</div>
+                            </div>
                         </div>
 
                         <!-- Map Area (Simulated) -->
-                        <div class="flex-1 bg-blue-50 relative overflow-hidden group">
-                            <div class="absolute inset-0 opacity-20"
-                                style="background-image: radial-gradient(#cbd5e1 2px, transparent 2px); background-size: 20px 20px;">
+                        <div class="flex-1 bg-slate-100 relative overflow-hidden group">
+                            <!-- Abstract Map Grid -->
+                            <div class="absolute inset-0 opacity-10" style="background-image: 
+                                linear-gradient(slate-300 1px, transparent 1px), 
+                                linear-gradient(90deg, slate-300 1px, transparent 1px); 
+                                background-size: 40px 40px;">
                             </div>
+
+                            <!-- Roads -->
+                            <svg class="absolute inset-0 w-full h-full opacity-30">
+                                <path d="M-20 100 L320 150" stroke="white" stroke-width="20" />
+                                <path d="M150 -20 L120 620" stroke="white" stroke-width="20" />
+                                <path d="M-20 400 L320 350" stroke="white" stroke-width="15" />
+                            </svg>
 
                             <!-- Route Line -->
                             <svg class="absolute inset-0 w-full h-full"
-                                style="filter: drop-shadow(0 4px 4px rgba(0,0,0,0.1));">
-                                <path d="M100 150 Q 200 300 150 450" fill="none" stroke="#00C853" stroke-width="4"
-                                    stroke-dasharray="10 5" class="animate-pulse" />
-                                <circle cx="100" cy="150" r="8" fill="#00C853" />
-                                <circle cx="150" cy="450" r="8" fill="#022C22" />
+                                style="filter: drop-shadow(0 4px 8px rgba(0,200,83,0.3));">
+                                <path d="M100 150 Q 180 300 150 450" fill="none" stroke="#00C853" stroke-width="5"
+                                    stroke-linecap="round" stroke-dasharray="10 10" class="animate-pulse" />
+                                <!-- Car/Bike Icon Moving -->
+                                <circle cx="100" cy="150" r="10" fill="white" stroke="#00C853" stroke-width="3" />
+                                <circle cx="150" cy="450" r="10" fill="#022C22" border="2px solid white" />
                             </svg>
 
                             <!-- Driver Card -->
                             <div
-                                class="absolute bottom-6 left-4 right-4 bg-white p-4 rounded-2xl shadow-lg animate-slide-in-right">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+                                class="absolute bottom-6 left-4 right-4 bg-white p-5 rounded-3xl shadow-xl animate-slide-in-right transform transition-transform hover:scale-105 duration-300">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden ring-2 ring-brand-primary/20">
                                         <img src="assets/rider_image.jpg" class="w-full h-full object-cover">
                                     </div>
                                     <div>
-                                        <div class="h-3 w-24 bg-slate-200 rounded mb-1"></div>
-                                        <div class="h-2 w-16 bg-slate-100 rounded"></div>
+                                        <div class="font-bold text-slate-900">Musa Ibrahim</div>
+                                        <div class="text-xs text-slate-500">Bajaj Boxer • <span
+                                                class="text-brand-primary bg-green-50 px-1 rounded">KWK-482</span></div>
                                     </div>
-                                    <div class="ml-auto text-green-600 font-bold text-sm">4.9 ★</div>
+                                    <div class="ml-auto flex flex-col items-end">
+                                        <span class="text-brand-primary font-bold text-sm">★ 4.9</span>
+                                        <span class="text-xs text-slate-400">500+ trips</span>
+                                    </div>
                                 </div>
-                                <div class="mt-4 flex gap-2">
-                                    <div
-                                        class="flex-1 h-10 bg-brand-primary/10 rounded-xl flex items-center justify-center text-xs font-bold text-brand-primary">
-                                        Message</div>
-                                    <div
-                                        class="flex-1 h-10 bg-brand-dark rounded-xl flex items-center justify-center text-xs font-bold text-white">
-                                        Call</div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <button
+                                        class="bg-brand-primary/10 text-brand-primary py-2.5 rounded-xl text-sm font-bold hover:bg-brand-primary hover:text-white transition-colors">
+                                        Message
+                                    </button>
+                                    <button
+                                        class="bg-brand-dark text-white py-2.5 rounded-xl text-sm font-bold hover:bg-black transition-colors flex items-center justify-center gap-2">
+                                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Call
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Driver Card -->
+            <div class="absolute bottom-6 left-4 right-4 bg-white p-4 rounded-2xl shadow-lg animate-slide-in-right">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+                        <img src="assets/rider_image.jpg" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="h-3 w-24 bg-slate-200 rounded mb-1"></div>
+                        <div class="h-2 w-16 bg-slate-100 rounded"></div>
+                    </div>
+                    <div class="ml-auto text-green-600 font-bold text-sm">4.9 ★</div>
+                </div>
+                <div class="mt-4 flex gap-2">
+                    <div
+                        class="flex-1 h-10 bg-brand-primary/10 rounded-xl flex items-center justify-center text-xs font-bold text-brand-primary">
+                        Message</div>
+                    <div
+                        class="flex-1 h-10 bg-brand-dark rounded-xl flex items-center justify-center text-xs font-bold text-white">
+                        Call</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
     </section>
 
