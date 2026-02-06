@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - KwikRide | Safe & Fast Bike Rides in Ogijo</title>
+    <meta name="description"
+        content="Discover KwikRide's premium features - GPS tracking, verified riders, affordable fares, instant booking, and more serving Ogijo, Sagamu, Ogun State.">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition-overlay" id="pageTransition"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Animated Mesh Gradient Background -->
+    <div class="mesh-gradient-bg">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+        <div class="gradient-blob blob-4"></div>
+        <div class="gradient-blob blob-5"></div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo_new.jpg" alt="KwikRide Logo">
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Company</a>
+                <a href="features.html" class="nav-link active">Vendors</a>
+                <a href="riders.html" class="nav-link">Riders</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Support</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#download" class="btn-nav-download">Download App</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content page-content">
+
+        <!-- Page Hero -->
+        <section class="page-hero" style="text-align: center; padding: 10rem 0 5rem;">
+            <div class="section-container">
+                <div class="page-hero-content reveal-on-scroll fade-in">
+                    <span class="page-tag"
+                        style="background: rgba(0, 65, 36, 0.1); color: var(--primary); padding: 0.5rem 1.5rem; border-radius: 100px; font-weight: 700;">Nationwide
+                        Features</span>
+                    <h1 class="display-massive">Built for Nigeria</h1>
+                    <p class="page-subtitle" style="margin: 2rem auto 0; max-width: 700px;">Experience Nigeria's
+                        next-gen bike-hailing platform. Pilot launched in
+                        Ogijo, Ogun State with nationwide expansion coming soon!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features-section section">
+            <div class="section-container">
+                <div class="features-grid">
+                    <div class="feature-card glass-card reveal-on-scroll fade-in delay-100" data-tilt>
+                        <div class="feature-icon-top gradient-blue">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" />
+                            </svg>
+                        </div>
+                        <h3>Lightning Fast Matching</h3>
+                        <p>Get matched with nearby riders within 30 seconds. Our nationwide algorithm finds the
+                            closest available rider to you instantly.</p>
+                        <ul class="feature-list">
+                            <li>✓ Average 30-second matching time</li>
+                            <li>✓ Real-time rider availability</li>
+                            <li>✓ Smart routing system</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card glass-card reveal-on-scroll fade-in delay-200" data-tilt>
+                        <div class="feature-icon-top gradient-green">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3>100% Safe & Secure</h3>
+                        <p>All our riders are thoroughly verified. Every ride is tracked with live GPS for
+                            your safety and peace of mind, anywhere in Nigeria.</p>
+                        <ul class="feature-list">
+                            <li>✓ Triple-verified riders</li>
+                            <li>✓ Live GPS tracking</li>
+                            <li>✓ 24/7 Emergency support</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card glass-card reveal-on-scroll fade-in delay-300" data-tilt>
+                        <div class="feature-icon-top gradient-orange">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                        </div>
+                        <h3>24/7 Availability</h3>
+                        <p>Need a ride at any time? We've got you covered with round-the-clock service across all
+                            neighborhoods in our active zones.</p>
+                        <ul class="feature-list">
+                            <li>✓ Available 24 hours a day</li>
+                            <li>✓ Serving all active areas</li>
+                            <li>✓ Reliability you can count on</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card glass-card reveal-on-scroll fade-in delay-100" data-tilt>
+                        <div class="feature-icon-top gradient-purple">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            </svg>
+                        </div>
+                        <h3>Flexible Payments</h3>
+                        <p>Pay your way! Cash, bank transfer, or in-app wallet. We make payments easy and convenient for
+                            everyone, everywhere.</p>
+                        <ul class="feature-list">
+                            <li>✓ Direct bank transfers</li>
+                            <li>✓ Secure in-app wallet</li>
+                            <li>✓ Cash support for pilot cities</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card glass-card reveal-on-scroll fade-in delay-200" data-tilt>
+                        <div class="feature-icon-top gradient-pink">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="17 8 12 3 7 8" />
+                                <line x1="12" y1="3" x2="12" y2="15" />
+                            </svg>
+                        </div>
+                        <h3>Detailed Tracking</h3>
+                        <p>Track all your rides with detailed history, digital receipts, and business expense reports at
+                            your fingertips.</p>
+                        <ul class="feature-list">
+                            <li>✓ Instant digital receipts</li>
+                            <li>✓ Business expense portal</li>
+                            <li>✓ Monthly riding analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card glass-card reveal-on-scroll fade-in delay-300" data-tilt>
+                        <div class="feature-icon-top gradient-teal">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3>Community First</h3>
+                        <p>Built by Nigerians, for Nigerians. Supporting local riders and bringing digital opportunities
+                            to every city we serve.</p>
+                        <ul class="feature-list">
+                            <li>✓ Local empowerment</li>
+                            <li>✓ Community-driven support</li>
+                            <li>✓ National job creation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Calculator -->
+        <section class="pricing-section section">
+            <div class="section-container">
+                <div class="section-header reveal-on-scroll fade-in">
+                    <h2 class="section-title">Transparent Pricing Across Cities</h2>
+                    <p class="section-subtitle">See exactly what you'll pay before you book. No hidden fees, no
+                        surprises, anywhere we operate.</p>
+                </div>
+
+                <div class="calculator-card glass-card reveal-on-scroll fade-in delay-200">
+                    <h3>Calculate Your Fare</h3>
+                    <div class="calculator-content">
+                        <div class="slider-group">
+                            <label for="distanceSlider">Distance: <span id="distanceValue">5 km</span></label>
+                            <input type="range" id="distanceSlider" min="1" max="20" value="5" class="custom-slider">
+                        </div>
+                        <div class="fare-breakdown">
+                            <div class="fare-row">
+                                <span>Base Fare:</span>
+                                <span id="baseFare">₦200</span>
+                            </div>
+                            <div class="fare-row">
+                                <span>Distance Fee (<span id="distanceKm">5</span> km × ₦80):</span>
+                                <span id="distanceFee">₦400</span>
+                            </div>
+                            <div class="fare-row total">
+                                <span>Total Fare:</span>
+                                <span id="totalFare" class="gradient-text">₦600</span>
+                            </div>
+                        </div>
+                        <div class="calculator-note">
+                            <p>💡 Use promo code <strong>LAUNCH500</strong> for ₦500 off your first ride!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section reveal-on-scroll fade-in">
+            <div class="section-container">
+                <div class="cta-card">
+                    <h2>Ready to Experience KwikRide?</h2>
+                    <p>Join thousands of happy riders across the nation. Experience the future of transportation today.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary btn-large hover-lift" id="bookRideBtn">Book Your First Ride</button>
+                        <a href="about.html" class="btn-secondary btn-large hover-lift page-link">Learn More About
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo_new.jpg" alt="KwikRide">
+                    </div>
+                    <p class="footer-tagline">Making local transportation fast, safe, and accessible for every community
+                        in Ogun State.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="page-link">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-it-works.html" class="page-link">How It Works</a></li>
+                        <li><a href="about.html" class="page-link">About Us</a></li>
+                        <li><a href="contact.html" class="page-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">For Riders</h4>
+                    <ul class="footer-links">
+                        <li><a href="riders.html" class="page-link">Become a Rider</a></li>
+                        <li><a href="riders.html#requirements" class="page-link">Requirements</a></li>
+                        <li><a href="riders.html#earnings" class="page-link">Earnings</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li>📍 Ogijo, Sagamu, Ogun State</li>
+                        <li>📧 support@kwikride.ng</li>
+                        <li>📞 +234 800 KWIKRIDE</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 KwikRide Technologies. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="footer-badge">🔒 SSL Secured</span>
+                    <span class="footer-badge">✓ Verified Business</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

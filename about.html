@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | KwikRide Ogijo</title>
+
+    <!-- Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            dark: '#022C22',
+                            primary: '#00C853',
+                            accent: '#00B0FF',
+                            light: '#F0FDF4',
+                        }
+                    },
+                    borderRadius: { '4xl': '2rem' }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-900 font-sans antialiased">
+
+    <nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+        <div
+            class="bg-white/90 backdrop-blur border border-slate-100 rounded-full px-6 py-3 flex items-center justify-between w-full max-w-5xl shadow-lg shadow-black/5">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img src="assets/logo.jpg" alt="KwikRide" class="h-10 w-10 rounded-xl object-cover shadow-sm">
+                <span class="text-xl font-bold tracking-tight text-brand-dark">Kwik<span
+                        class="text-brand-primary">Ride</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="about.html" class="text-brand-primary font-bold">About</a>
+                <a href="riders.html" class="hover:text-brand-primary transition-colors">For Riders</a>
+                <a href="contact.html" class="hover:text-brand-primary transition-colors">Support</a>
+            </div>
+            <a href="index.html#download"
+                class="bg-brand-dark text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-primary transition-colors">Download
+                App</a>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center mb-20">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-brand-dark mb-6">Driven by <span
+                    class="text-brand-primary">Community.</span></h1>
+            <p class="text-xl text-slate-500 max-w-2xl mx-auto">We are building the most reliable transportation
+                network,
+                powered by technology and trust.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+            <div class="bg-green-50 rounded-4xl p-12 min-h-[400px] flex items-center justify-center">
+                <!-- Visual Placeholder -->
+                <div class="text-6xl">🌍</div>
+            </div>
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-brand-dark">Our Mission</h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    KwikRide isn't just about moving people from A to B. It's about unlocking potential. We are
+                    expanding rapidly to connect cities and communities.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary font-bold">
+                            1</div>
+                        <div>
+                            <h3 class="font-bold text-lg">Safety First</h3>
+                            <p class="text-slate-500">Every rider is verified and tracked.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts (Same GSAP config if needed, keeping minimal for secondary pages for speed) -->
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>

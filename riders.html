@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive for KwikRide | Earn More</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            dark: '#022C22',
+                            primary: '#00C853',
+                            accent: '#00B0FF',
+                            light: '#F0FDF4',
+                        }
+                    },
+                    borderRadius: { '4xl': '2rem' }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-900 font-sans antialiased">
+
+    <nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+        <div
+            class="bg-white/90 backdrop-blur border border-slate-100 rounded-full px-6 py-3 flex items-center justify-between w-full max-w-5xl shadow-lg shadow-black/5">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img src="assets/logo.jpg" alt="KwikRide" class="h-10 w-10 rounded-xl object-cover shadow-sm">
+                <span class="text-xl font-bold tracking-tight text-brand-dark">Kwik<span
+                        class="text-brand-primary">Ride</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="about.html" class="hover:text-brand-primary transition-colors">About</a>
+                <a href="riders.html" class="text-brand-primary font-bold">For Riders</a>
+                <a href="contact.html" class="hover:text-brand-primary transition-colors">Support</a>
+            </div>
+            <a href="index.html#download"
+                class="bg-brand-dark text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-primary transition-colors">Download
+                App</a>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-20 px-4">
+        <!-- Hero -->
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 mb-24">
+            <div class="flex-1 space-y-6 animate-fade-in-up">
+                <div class="inline-block bg-orange-100 text-orange-700 font-bold px-4 py-1 rounded-full text-sm">Hiring
+                    Now</div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-brand-dark">Earn like a <br><span
+                        class="text-brand-primary">Boss.</span></h1>
+                <p class="text-xl text-slate-500 max-w-lg">Make up to ₦20,000 daily driving on your own schedule. Low
+                    commission, high rewards.</p>
+                <div class="flex gap-4 pt-4">
+                    <button
+                        class="bg-brand-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-brand-accent transition-all hover:scale-105 shadow-xl">Sign
+                        Up to Ride</button>
+                </div>
+            </div>
+            <div
+                class="flex-1 bg-brand-light rounded-4xl h-[500px] w-full flex items-center justify-center relative overflow-hidden animate-slide-in-right">
+                <img src="assets/hero-rider.png"
+                    class="w-3/4 object-contain relative z-10 transition-transform hover:scale-105 duration-500"
+                    alt="Rider">
+                <!-- Abstract Shapes -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-primary/20 rounded-full blur-3xl -mr-20 -mt-20">
+                </div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl -ml-20 -mb-20">
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Grid -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+            <div
+                class="bg-white border border-slate-100 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 scroll-trigger">
+                <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-2xl mb-6">💰</div>
+                <h3 class="font-bold text-xl mb-2 text-brand-dark">Weekly Payouts</h3>
+                <p class="text-slate-500">Get your earnings every Monday morning directly to your bank account. No
+                    stories.</p>
+            </div>
+            <div
+                class="bg-white border border-slate-100 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 scroll-trigger delay-100">
+                <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl mb-6">🛡️</div>
+                <h3 class="font-bold text-xl mb-2 text-brand-dark">Insurance Cover</h3>
+                <p class="text-slate-500">We cover medical and life insurance for you while you're online. You are
+                    valuable.</p>
+            </div>
+            <div
+                class="bg-white border border-slate-100 p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 scroll-trigger delay-200">
+                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-2xl mb-6">🕒</div>
+                <h3 class="font-bold text-xl mb-2 text-brand-dark">Flexible Hours</h3>
+                <p class="text-slate-500">You choose when to work. No shifts, no boss. Just turn on the app.</p>
+            </div>
+        </div>
+
+        <!-- Steps to Join -->
+        <div class="bg-brand-dark rounded-4xl p-8 md:p-16 text-white relative overflow-hidden mb-24 scroll-trigger">
+            <div class="max-w-4xl mx-auto relative z-10">
+                <h2 class="text-3xl md:text-5xl font-bold py-10 mb-12 text-center">Start earning in <span
+                        class="text-brand-primary">3 Steps</span></h2>
+
+                <div class="space-y-12">
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-12 h-12 rounded-full bg-brand-primary flex-shrink-0 flex items-center justify-center font-bold text-brand-dark text-xl">
+                            1</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Sign Up Online</h3>
+                            <p class="text-slate-400">Fill the form, upload your driver's license and bike papers.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-12 h-12 rounded-full bg-slate-700 flex-shrink-0 flex items-center justify-center font-bold text-white text-xl">
+                            2</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Get Verified</h3>
+                            <p class="text-slate-400">Visit our center for a quick vehicle inspection and onboarding
+                                session.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start">
+                        <div
+                            class="w-12 h-12 rounded-full bg-slate-700 flex-shrink-0 flex items-center justify-center font-bold text-white text-xl">
+                            3</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Start Riding</h3>
+                            <p class="text-slate-400">Turn on the app, accept trips, and see the money roll in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>

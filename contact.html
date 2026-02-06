@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | KwikRide Ogijo</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            dark: '#022C22',
+                            primary: '#00C853',
+                            accent: '#00B0FF',
+                            light: '#F0FDF4',
+                        }
+                    },
+                    borderRadius: { '4xl': '2rem' }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-900 font-sans antialiased">
+
+    <nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+        <div
+            class="bg-white/90 backdrop-blur border border-slate-100 rounded-full px-6 py-3 flex items-center justify-between w-full max-w-5xl shadow-lg shadow-black/5">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img src="assets/logo.jpg" alt="KwikRide" class="h-10 w-10 rounded-xl object-cover shadow-sm">
+                <span class="text-xl font-bold tracking-tight text-brand-dark">Kwik<span
+                        class="text-brand-primary">Ride</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="about.html" class="hover:text-brand-primary transition-colors">About</a>
+                <a href="riders.html" class="hover:text-brand-primary transition-colors">For Riders</a>
+                <a href="contact.html" class="text-brand-primary font-bold">Support</a>
+            </div>
+            <a href="index.html#download"
+                class="bg-brand-dark text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-primary transition-colors">Download
+                App</a>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-20 px-4">
+        <!-- Header -->
+        <div class="max-w-3xl mx-auto text-center mb-16 animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-brand-dark mb-4">We're here to <span
+                    class="text-brand-primary">Help.</span></h1>
+            <p class="text-xl text-slate-500">Got a question or issue? Our support team is available 24/7.</p>
+        </div>
+
+        <!-- Quick Actions Grid -->
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 animate-fade-in-up"
+            style="animation-delay: 0.1s;">
+            <a href="#" class="bg-blue-50 p-6 rounded-2xl text-center hover:bg-blue-100 transition-colors group">
+                <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">📦</div>
+                <div class="font-bold text-blue-900 text-sm">Lost Item</div>
+            </a>
+            <a href="#" class="bg-green-50 p-6 rounded-2xl text-center hover:bg-green-100 transition-colors group">
+                <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">📝</div>
+                <div class="font-bold text-green-900 text-sm">Ride Issue</div>
+            </a>
+            <a href="#" class="bg-orange-50 p-6 rounded-2xl text-center hover:bg-orange-100 transition-colors group">
+                <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🛡️</div>
+                <div class="font-bold text-orange-900 text-sm">Safety</div>
+            </a>
+            <a href="#" class="bg-purple-50 p-6 rounded-2xl text-center hover:bg-purple-100 transition-colors group">
+                <div class="text-3xl mb-2 group-hover:scale-110 transition-transform">🤝</div>
+                <div class="font-bold text-purple-900 text-sm">Partner</div>
+            </a>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="max-w-2xl mx-auto bg-white border border-slate-100 rounded-[2.5rem] p-8 md:p-12 shadow-2xl shadow-slate-200/50 animate-fade-in-up"
+            style="animation-delay: 0.2s;">
+            <h2 class="text-2xl font-bold text-brand-dark mb-8">Send us a message</h2>
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Subject</label>
+                    <div class="relative">
+                        <select
+                            class="w-full bg-slate-50 border-none rounded-xl p-4 text-slate-600 focus:ring-2 focus:ring-brand-primary appearance-none cursor-pointer hover:bg-slate-100 transition-colors">
+                            <option>Trip Issue</option>
+                            <option>App Bug</option>
+                            <option>Rider Feedback</option>
+                            <option>Other</option>
+                        </select>
+                        <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">▼
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Message</label>
+                    <textarea
+                        class="w-full bg-slate-50 border-none rounded-xl p-4 h-40 text-slate-600 focus:ring-2 focus:ring-brand-primary hover:bg-slate-100 transition-colors resize-none"
+                        placeholder="Tell us what happened..."></textarea>
+                </div>
+                <button
+                    class="w-full bg-brand-dark text-white font-bold py-5 rounded-xl hover:bg-brand-primary transition-all hover:shadow-lg hover:shadow-green-500/20 active:scale-95">Send
+                    Message</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
