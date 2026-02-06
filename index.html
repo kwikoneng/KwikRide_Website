@@ -80,13 +80,41 @@
                 <a href="contact.html" class="hover:text-brand-primary transition-colors">Support</a>
             </div>
 
-            <!-- CTA -->
-            <a href="#download"
-                class="bg-brand-accent text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-primary hover:shadow-lg hover:shadow-blue-400/30 transition-all duration-300 transform hover:-translate-y-0.5">
-                Download App
-            </a>
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="#download"
+                    class="hidden md:block bg-brand-accent text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-primary hover:shadow-lg hover:shadow-blue-400/30 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Download App
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-300 md:hidden flex flex-col pt-32 px-6">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-slate-500 p-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="flex flex-col gap-8 text-2xl font-bold text-brand-dark">
+            <a href="index.html" class="hover:text-brand-primary transition-colors" onclick="toggleMenu()">Home</a>
+            <a href="about.html" class="hover:text-brand-primary transition-colors" onclick="toggleMenu()">About</a>
+            <a href="riders.html" class="hover:text-brand-primary transition-colors" onclick="toggleMenu()">For
+                Riders</a>
+            <a href="contact.html" class="hover:text-brand-primary transition-colors" onclick="toggleMenu()">Support</a>
+            <a href="#download" class="text-brand-accent" onclick="toggleMenu()">Download App</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <main class="hero-gradient min-h-screen pt-32 pb-20 px-4 md:px-6 flex items-center overflow-hidden">
@@ -118,22 +146,22 @@
 
                 <div
                     class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start animate-fade-in-up pt-4">
-                    <button
+                    <a href="#download"
                         class="w-full sm:w-auto flex items-center justify-center gap-3 bg-brand-dark text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-brand-accent transition-all hover:scale-105 shadow-xl shadow-green-900/10">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M17.523 15.3414C17.523 15.3414 17.5791 15.3685 17.6534 15.4678C18.4239 16.5916 17.7562 18.3168 17.0652 19.3248C16.5647 20.0617 16.0354 20.7621 15.1963 20.7621C14.3402 20.7621 14.0766 20.2524 13.0805 20.2524C12.0911 20.2524 11.7828 20.7621 11.0069 20.7621C10.1508 20.7621 9.5492 19.9575 8.98188 19.1328C7.817 17.4474 6.94054 14.3725 8.13629 12.2871C8.7297 11.2514 9.79155 10.612 10.9064 10.612C11.979 10.612 13.0163 11.3533 13.6705 11.3533C14.3216 11.3533 15.5398 10.3705 16.7118 10.5518C17.2023 10.5732 18.5714 10.7516 19.4503 12.0396C19.3496 12.0984 17.523 13.1539 17.523 15.3414ZM15.008 8.85195C15.4957 8.25752 15.8202 7.43262 15.7278 6.60681C15.0344 6.63483 14.2001 7.06941 13.7042 7.66063C13.2504 8.20459 12.8624 9.06641 12.9814 9.87012C13.7548 9.93042 14.5977 9.44482 15.008 8.85195Z" />
                         </svg>
                         App Store
-                    </button>
-                    <button
+                    </a>
+                    <a href="#download"
                         class="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-slate-800 border border-slate-200 px-8 py-4 rounded-2xl font-bold text-lg hover:border-brand-primary hover:text-brand-primary transition-all hover:scale-105 shadow-lg shadow-slate-200/50">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M3.609 1.814L13.792 12 3.61 22.186C2.988 21.846 2.5 21.034 2.5 19.943V4.057C2.5 2.964 2.988 2.153 3.609 1.814zM16.91 15.118l3.78 2.164c.395.226.54.436.54.718s-.145.492-.54.718l-3.78 2.163L14.981 19.3l1.929-1.928v-2.254zm-1.929-6.418l1.929 1.928v2.254l-1.929-1.928-1.929-2.254zM17.45 6.444l3.24 1.855c.395.226.54.436.54.718s-.145.492-.54.718l-3.24 1.855-3.24-1.855 3.24-1.855z" />
                         </svg>
                         Google Play
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -158,9 +186,9 @@
                             alt="KwikRide Rider 3">
                     </div>
 
-                    <!-- Floating Cards -->
+                    <!-- Floating Cards (Hidden on mobile) -->
                     <div
-                        class="float-card absolute top-20 left-0 bg-white/90 backdrop-blur border border-white/50 p-4 rounded-2xl shadow-xl z-20 transform -rotate-6 group-hover:rotate-0 transition-all duration-500">
+                        class="hidden md:flex float-card absolute top-20 left-0 bg-white/90 backdrop-blur border border-white/50 p-4 rounded-2xl shadow-xl z-20 transform -rotate-6 group-hover:rotate-0 transition-all duration-500">
                         <div class="flex items-center gap-3">
                             <div class="bg-green-100 p-2 rounded-lg text-green-600">⚡</div>
                             <div>
@@ -172,7 +200,7 @@
                     </div>
 
                     <div
-                        class="float-card absolute bottom-20 right-0 bg-white/90 backdrop-blur border border-white/50 p-4 rounded-2xl shadow-xl z-20 transform rotate-6 group-hover:rotate-0 transition-all duration-500">
+                        class="hidden md:flex float-card absolute bottom-20 right-0 bg-white/90 backdrop-blur border border-white/50 p-4 rounded-2xl shadow-xl z-20 transform rotate-6 group-hover:rotate-0 transition-all duration-500">
                         <div class="flex items-center gap-3">
                             <div class="bg-blue-100 p-2 rounded-lg text-blue-600">🛡️</div>
                             <div>
@@ -236,7 +264,7 @@
     </section>
 
     <!-- App Mockup / Experience Section -->
-    <section class="py-24 bg-slate-50 relative overflow-hidden">
+    <section id="download" class="py-24 bg-slate-50 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             <div class="order-2 lg:order-1 scroll-trigger">

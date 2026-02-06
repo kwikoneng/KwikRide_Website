@@ -85,3 +85,33 @@ gsap.utils.toArray('.scroll-trigger').forEach((element) => {
         ease: "power3.out"
     });
 });
+
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const closeMenuBtn = document.getElementById('close-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+function toggleMenu() {
+    if (mobileMenu.classList.contains('translate-x-full')) {
+        mobileMenu.classList.remove('translate-x-full');
+    } else {
+        mobileMenu.classList.add('translate-x-full');
+    }
+}
+
+if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+}
+if (closeMenuBtn) {
+    closeMenuBtn.addEventListener('click', toggleMenu);
+}
+
+// Button Feedback (Demonstration)
+document.querySelectorAll('button:not(#mobile-menu-btn):not(#close-menu-btn)').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        // Only if it's not strictly a link (buttons usually invoke actions)
+        if (!btn.closest('a')) {
+            alert('🚀 In a real app, this would open ' + btn.innerText + ' or submit your form!');
+        }
+    });
+});
