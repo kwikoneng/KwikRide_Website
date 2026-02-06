@@ -49,42 +49,154 @@
                 <a href="riders.html" class="hover:text-brand-primary transition-colors">For Riders</a>
                 <a href="contact.html" class="hover:text-brand-primary transition-colors">Support</a>
             </div>
-            <a href="index.html#download"
-                class="bg-brand-dark text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-primary transition-colors">Download
-                App</a>
+
+            <div class="flex items-center gap-4">
+                <a href="index.html#download"
+                    class="hidden md:block bg-brand-dark text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-primary transition-colors">Download
+                    App</a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
     </nav>
 
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-300 md:hidden flex flex-col pt-32 px-6">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-slate-500 p-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="flex flex-col gap-8 text-2xl font-bold text-brand-dark">
+            <a href="index.html" class="hover:text-brand-primary transition-colors" onclick="toggleMenu()">Home</a>
+            <a href="about.html" class="text-brand-primary" onclick="toggleMenu()">About</a>
+            <a href="riders.html" class="hover:text-brand-primary transition-colors" onclick="toggleMenu()">For
+                Riders</a>
+            <a href="contact.html" class="hover:text-brand-primary transition-colors" onclick="toggleMenu()">Support</a>
+            <a href="index.html#download" class="text-brand-dark" onclick="toggleMenu()">Download App</a>
+        </div>
+    </div>
+
     <main class="pt-40 pb-20 px-4">
+        <!-- Hero Title -->
         <div class="max-w-4xl mx-auto text-center mb-20">
             <h1 class="text-4xl md:text-6xl font-extrabold text-brand-dark mb-6">Driven by <span
                     class="text-brand-primary">Community.</span></h1>
             <p class="text-xl text-slate-500 max-w-2xl mx-auto">We are building the most reliable transportation
-                network,
-                powered by technology and trust.</p>
+                network in Ogijo, powered by technology, trust, and our people.</p>
         </div>
 
+        <!-- Vision Grid -->
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
-            <div class="bg-green-50 rounded-4xl p-12 min-h-[400px] flex items-center justify-center">
-                <!-- Visual Placeholder -->
-                <div class="text-6xl">🌍</div>
+            <div
+                class="bg-brand-light rounded-4xl p-8 min-h-[400px] flex items-center justify-center relative overflow-hidden group">
+                <div
+                    class="absolute inset-0 bg-[url('assets/hero_image.jpg')] bg-cover bg-center opacity-70 group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="absolute inset-0 bg-brand-dark/20 group-hover:bg-brand-dark/10 transition-colors"></div>
+                <div class="relative z-10 bg-white/90 backdrop-blur px-8 py-4 rounded-2xl shadow-xl">
+                    <span
+                        class="text-4xl font-bold bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent">Ogijo
+                        First.</span>
+                </div>
             </div>
-            <div class="space-y-6">
-                <h2 class="text-3xl font-bold text-brand-dark">Our Mission</h2>
-                <p class="text-lg text-slate-600 leading-relaxed">
-                    KwikRide isn't just about moving people from A to B. It's about unlocking potential. We are
-                    expanding rapidly to connect cities and communities.
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-start gap-4">
+
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-brand-dark mb-4">Our Mission</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        To simplify movement for everyone. KwikRide isn't just an app; it's the lifeline of the city. We
+                        intend to reduce travel time by 50% for the average commuter and provide decent, dignified work
+                        for thousands of riders.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="p-6 border border-slate-100 rounded-2xl hover:shadow-lg transition-shadow bg-white">
                         <div
-                            class="w-8 h-8 rounded-full bg-brand-primary/10 flex items-center justify-center text-brand-primary font-bold">
-                            1</div>
-                        <div>
-                            <h3 class="font-bold text-lg">Safety First</h3>
-                            <p class="text-slate-500">Every rider is verified and tracked.</p>
-                        </div>
+                            class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mb-3">
+                            🛡️</div>
+                        <h3 class="font-bold text-brand-dark">Safety Standards</h3>
+                        <p class="text-sm text-slate-500 mt-1">Verified riders, real-time tracking, and insurance for
+                            every single trip.</p>
                     </div>
+                    <div class="p-6 border border-slate-100 rounded-2xl hover:shadow-lg transition-shadow bg-white">
+                        <div
+                            class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-3">
+                            🚀</div>
+                        <h3 class="font-bold text-brand-dark">Innovation</h3>
+                        <p class="text-sm text-slate-500 mt-1">Using data to optimize routes, reduce wait times, and
+                            lower costs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="bg-brand-dark rounded-[3rem] p-12 text-center text-white mb-24 relative overflow-hidden">
+            <div class="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-4xl md:text-5xl font-extrabold text-brand-primary mb-2">5k+</div>
+                    <div class="text-slate-400 font-medium">Daily Rides</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-extrabold text-brand-primary mb-2">200+</div>
+                    <div class="text-slate-400 font-medium">Verified Riders</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-extrabold text-brand-primary mb-2">98%</div>
+                    <div class="text-slate-400 font-medium">On-Time</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-extrabold text-brand-primary mb-2">24/7</div>
+                    <div class="text-slate-400 font-medium">Safe Support</div>
+                </div>
+            </div>
+            <!-- Decorative -->
+            <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-brand-primary rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Team / Values Section -->
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-brand-dark mb-12">Built by Locals, for Locals</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group">
+                    <div class="bg-slate-100 h-64 rounded-3xl mb-6 overflow-hidden relative">
+                        <img src="assets/rider_image.jpg"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold">Rider Partners</h3>
+                    <p class="text-brand-primary font-medium">The heartbeat</p>
+                </div>
+                <div class="group">
+                    <div class="bg-slate-100 h-64 rounded-3xl mb-6 overflow-hidden relative">
+                        <!-- Placeholder for team/ops -->
+                        <div class="w-full h-full bg-slate-200 flex items-center justify-center text-4xl">⚙️</div>
+                    </div>
+                    <h3 class="text-xl font-bold">Operations Team</h3>
+                    <p class="text-brand-primary font-medium">Keeping it moving</p>
+                </div>
+                <div class="group">
+                    <div class="bg-slate-100 h-64 rounded-3xl mb-6 overflow-hidden relative">
+                        <!-- Placeholder for tech/support -->
+                        <div class="w-full h-full bg-slate-200 flex items-center justify-center text-4xl">💻</div>
+                    </div>
+                    <h3 class="text-xl font-bold">Tech & Support</h3>
+                    <p class="text-brand-primary font-medium">Always online</p>
                 </div>
             </div>
         </div>

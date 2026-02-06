@@ -84,7 +84,7 @@
             <div class="flex items-center gap-4">
                 <a href="#download"
                     class="hidden md:block bg-brand-accent text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-primary hover:shadow-lg hover:shadow-blue-400/30 transition-all duration-300 transform hover:-translate-y-0.5">
-                    Download App
+                    Join Waitlist
                 </a>
 
                 <!-- Mobile Menu Button -->
@@ -129,471 +129,549 @@
                             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                     </span>
-                    Live in Nigeria & Beyond
+                    Coming live soon in Ogijo
                 </div>
 
                 <h1
                     class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-brand-dark animate-fade-in-up md:min-w-[700px]">
                     Moving People <br>
-                    <span class="bg-gradient-to-r from-brand-primary to-brand-accent clip-text-image">Like Magic.</span>
+                    <span id="hero-rotator"
+                        class="bg-gradient-to-r from-brand-primary to-brand-accent clip-text-image">Like Magic.</span>
                 </h1>
 
                 <p
                     class="text-lg md:text-xl text-slate-500 max-w-lg mx-auto lg:mx-0 leading-relaxed animate-fade-in-up">
-                    Experience the future of transportation. Fast, safe, and reliable rides at the tap of a button.
-                    Everywhere you need to be.
+                    Experience the future of transportation. Join the waitlist today to be the first to ride when we
+                    launch.
                 </p>
 
                 <div
                     class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start animate-fade-in-up pt-4">
                     <a href="#download"
                         class="w-full sm:w-auto flex items-center justify-center gap-3 bg-brand-dark text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-brand-accent transition-all hover:scale-105 shadow-xl shadow-green-900/10">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                            <path
-                                d="M17.523 15.3414C17.523 15.3414 17.5791 15.3685 17.6534 15.4678C18.4239 16.5916 17.7562 18.3168 17.0652 19.3248C16.5647 20.0617 16.0354 20.7621 15.1963 20.7621C14.3402 20.7621 14.0766 20.2524 13.0805 20.2524C12.0911 20.2524 11.7828 20.7621 11.0069 20.7621C10.1508 20.7621 9.5492 19.9575 8.98188 19.1328C7.817 17.4474 6.94054 14.3725 8.13629 12.2871C8.7297 11.2514 9.79155 10.612 10.9064 10.612C11.979 10.612 13.0163 11.3533 13.6705 11.3533C14.3216 11.3533 15.5398 10.3705 16.7118 10.5518C17.2023 10.5732 18.5714 10.7516 19.4503 12.0396C19.3496 12.0984 17.523 13.1539 17.523 15.3414ZM15.008 8.85195C15.4957 8.25752 15.8202 7.43262 15.7278 6.60681C15.0344 6.63483 14.2001 7.06941 13.7042 7.66063C13.2504 8.20459 12.8624 9.06641 12.9814 9.87012C13.7548 9.93042 14.5977 9.44482 15.008 8.85195Z" />
+                        Join Waitlist
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                         </svg>
-                        App Store
-                    </a>
-                    <a href="#download"
-                        class="w-full sm:w-auto flex items-center justify-center gap-3 bg-white text-slate-800 border border-slate-200 px-8 py-4 rounded-2xl font-bold text-lg hover:border-brand-primary hover:text-brand-primary transition-all hover:scale-105 shadow-lg shadow-slate-200/50">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                            <path
-                                d="M3.609 1.814L13.792 12 3.61 22.186C2.988 21.846 2.5 21.034 2.5 19.943V4.057C2.5 2.964 2.988 2.153 3.609 1.814zM16.91 15.118l3.78 2.164c.395.226.54.436.54.718s-.145.492-.54.718l-3.78 2.163L14.981 19.3l1.929-1.928v-2.254zm-1.929-6.418l1.929 1.928v2.254l-1.929-1.928-1.929-2.254zM17.45 6.444l3.24 1.855c.395.226.54.436.54.718s-.145.492-.54.718l-3.24 1.855-3.24-1.855 3.24-1.855z" />
-                        </svg>
-                        Google Play
                     </a>
                 </div>
             </div>
 
-            <!-- Hero Visual (Dynamic Rider Slideshow) -->
-            <div class="relative z-0 perspective-1000 parallax-container animate-slide-in-right">
-                <div class="relative w-full aspect-square max-w-[600px] mx-auto group">
-                    <!-- Blob Background -->
-                    <div
-                        class="absolute top-10 left-10 w-4/5 h-4/5 bg-brand-primary/10 rounded-full blur-3xl animate-pulse">
-                    </div>
+            <!-- Dual Phone Mockups (Sliding) -->
+            <div
+                class="col-span-1 lg:col-span-2 relative h-[600px] flex justify-center items-end mt-12 lg:mt-0 perspective-1000">
 
-                    <!-- Rider Image Slideshow -->
-                    <div class="relative z-10 w-full h-full" id="rider-slideshow">
-                        <img src="assets/rider_image.jpg"
-                            class="absolute inset-0 w-full h-full object-contain filter drop-shadow-2xl transition-opacity duration-1000 slide-img opacity-100"
-                            alt="KwikRide Rider 1">
-                        <img src="assets/hero_image.jpg"
-                            class="absolute inset-0 w-full h-full object-contain filter drop-shadow-2xl transition-opacity duration-1000 slide-img opacity-0"
-                            alt="KwikRide Rider 2">
-                        <img src="assets/hero-rider.png"
-                            class="absolute inset-0 w-full h-full object-contain filter drop-shadow-2xl transition-opacity duration-1000 slide-img opacity-0"
-                            alt="KwikRide Rider 3">
-                    </div>
-
-                    <!-- Floating Cards (Hidden on mobile) -->
+                <!-- Mockup 1: iPhone (Oriokuta -> Ogijo) -->
+                <div id="mockup-1"
+                    class="absolute transition-all duration-1000 ease-in-out transform w-[280px] h-[580px] bg-slate-900 rounded-[50px] border-[8px] border-slate-900 shadow-2xl overflow-hidden ring-4 ring-slate-200/50 z-20 hover:scale-105 cursor-pointer"
+                    style="left: 50%; transform: translateX(-50%) rotate(-3deg);">
+                    <!-- Dynamic Island -->
                     <div
-                        class="hidden md:flex float-card absolute top-20 left-0 bg-white/90 backdrop-blur border border-white/50 p-4 rounded-2xl shadow-xl z-20 transform -rotate-6 group-hover:rotate-0 transition-all duration-500">
-                        <div class="flex items-center gap-3">
-                            <div class="bg-green-100 p-2 rounded-lg text-green-600">⚡</div>
-                            <div>
-                                <p class="text-xs text-slate-500 font-medium">Pickup Time</p>
-                                <p class="text-sm font-bold text-slate-800">
-                                    < 3 Mins</p>
-                            </div>
+                        class="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-8 bg-black rounded-full z-30 flex items-center justify-center gap-2 px-3">
+                        <div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
+                        <div class="flex-1 h-full flex items-center justify-end">
+                            <div class="w-4 h-4 rounded-full border-2 border-slate-700"></div>
                         </div>
-                    </div>
-
-                    <div
-                        class="hidden md:flex float-card absolute bottom-20 right-0 bg-white/90 backdrop-blur border border-white/50 p-4 rounded-2xl shadow-xl z-20 transform rotate-6 group-hover:rotate-0 transition-all duration-500">
-                        <div class="flex items-center gap-3">
-                            <div class="bg-blue-100 p-2 rounded-lg text-blue-600">🛡️</div>
-                            <div>
-                                <p class="text-xs text-slate-500 font-medium">Safety First</p>
-                                <p class="text-sm font-bold text-slate-800">Verified Riders</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- How It Works Section -->
-    <section class="py-24 bg-white relative">
-        <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16 scroll-trigger">
-                <span class="text-brand-primary font-bold tracking-wider text-sm uppercase">Simple Process</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark mt-3">Riding is <span
-                        class="text-brand-primary">Easy</span></h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
-                <!-- Connecting Line (Desktop) -->
-                <div
-                    class="hidden md:block absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-primary/20 to-transparent -z-0">
-                </div>
-
-                <!-- Step 1 -->
-                <div class="relative z-10 text-center scroll-trigger group">
-                    <div
-                        class="w-24 h-24 bg-white border-4 border-green-50 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                        📱
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Request</h3>
-                    <p class="text-slate-500 px-4">Open the app, enter your destination, and choose your ride type.</p>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="relative z-10 text-center scroll-trigger group delay-100">
-                    <div
-                        class="w-24 h-24 bg-white border-4 border-green-50 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                        🛵
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Ride</h3>
-                    <p class="text-slate-500 px-4">Meet your verified rider and enjoy a safe trip to your destination.
-                    </p>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="relative z-10 text-center scroll-trigger group delay-200">
-                    <div
-                        class="w-24 h-24 bg-white border-4 border-green-50 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                        💳
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Pay</h3>
-                    <p class="text-slate-500 px-4">Pay seamlessly with cash, transfer, or your KwikWallet.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- App Mockup / Experience Section -->
-    <section id="download" class="py-24 bg-slate-50 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-            <div class="order-2 lg:order-1 scroll-trigger">
-                <span class="text-brand-accent font-bold tracking-wider text-sm uppercase">The Experience</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark mt-3 mb-6">Designed for <br> <span
-                        class="bg-gradient-to-r from-brand-accent to-brand-primary clip-text-image">Real Humans.</span>
-                </h2>
-                <p class="text-slate-600 text-lg mb-8">
-                    We built KwikRide to be intuitive. No complex menus, no hidden fees. Just a clean interface that
-                    gets you moving in seconds.
-                </p>
-
-                <ul class="space-y-4 mb-8">
-                    <li class="flex items-center gap-3">
-                        <div
-                            class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs">
-                            ✓</div>
-                        <span class="font-medium text-slate-700">Live Trip Tracking</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <div
-                            class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs">
-                            ✓</div>
-                        <span class="font-medium text-slate-700">Driver Details & Ratings</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <div
-                            class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs">
-                            ✓</div>
-                        <span class="font-medium text-slate-700">24/7 In-App Support</span>
-                    </li>
-                </ul>
-
-                <button
-                    class="bg-brand-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-black transition-transform hover:-translate-y-1 shadow-xl">Get
-                    the App</button>
-            </div>
-
-            <!-- CSS Phone Mockup -->
-            <div class="order-1 lg:order-2 flex justify-center relative scroll-trigger">
-                <!-- Phone Frame -->
-                <div
-                    class="relative w-[300px] h-[600px] bg-slate-900 rounded-[40px] border-8 border-slate-900 shadow-2xl overflow-hidden ring-4 ring-slate-200/50">
-                    <!-- Dynamic Island/Notch -->
-                    <div
-                        class="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-7 bg-black rounded-full z-30 flex items-center justify-center gap-2 px-3">
-                        <div class="w-1 h-1 rounded-full bg-green-500 animate-pulse"></div>
                     </div>
 
                     <!-- Screen Content -->
-                    <div class="w-full h-full bg-slate-50 relative flex flex-col font-sans">
-
-                        <!-- Status Bar -->
-                        <div
-                            class="h-12 px-6 flex justify-between items-end pb-2 bg-white/80 backdrop-blur z-20 text-xs font-bold text-slate-800">
-                            <span>9:41</span>
-                            <div class="flex gap-1.5">
-                                <span>5G</span>
-                                <div class="w-4 h-2.5 border border-slate-800 rounded-sm relative">
-                                    <div class="absolute inset-0.5 bg-slate-800"></div>
-                                </div>
+                    <div class="w-full h-full bg-white relative flex flex-col font-sans">
+                        <!-- Map Layer -->
+                        <div class="absolute inset-0 bg-slate-100">
+                            <div class="absolute inset-0 opacity-20"
+                                style="background-image: radial-gradient(#94a3b8 1px, transparent 1px); background-size: 20px 20px;">
                             </div>
-                        </div>
+                            <!-- Route: Oriokuta -> Ogijo Busstop -->
+                            <svg class="absolute inset-0 w-full h-full">
+                                <path d="M50 100 Q 150 250 120 450" fill="none" stroke="#00C853" stroke-width="6"
+                                    stroke-linecap="round" stroke-dasharray="12 12" class="animate-pulse" />
+                                <!-- Points -->
+                                <circle cx="50" cy="100" r="6" fill="#022C22" />
+                                <circle cx="120" cy="450" r="6" fill="#00C853" />
+                            </svg>
 
-                        <!-- Top Floating UI -->
-                        <div class="absolute top-16 left-4 right-4 z-20">
+                            <!-- Labels -->
                             <div
-                                class="bg-brand-dark/90 backdrop-blur text-white p-3 rounded-2xl flex items-center gap-3 shadow-lg animate-fade-in-up">
-                                <div
-                                    class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center font-bold text-xs">
-                                    GO</div>
-                                <div class="flex-1">
-                                    <div class="text-xs text-slate-300">Arriving in</div>
-                                    <div class="font-bold">2 mins</div>
-                                </div>
-                                <div class="text-xs bg-white/20 px-2 py-1 rounded">On Time</div>
+                                class="absolute top-20 left-12 bg-white px-3 py-1 rounded-full shadow-md text-xs font-bold border border-slate-200">
+                                📍 Oriokuta
+                            </div>
+                            <div
+                                class="absolute bottom-32 right-16 bg-brand-dark text-white px-3 py-1 rounded-full shadow-md text-xs font-bold">
+                                🏁 Ogijo Busstop
                             </div>
                         </div>
 
-                        <!-- Map Area (Simulated) -->
-                        <div class="flex-1 bg-slate-100 relative overflow-hidden group">
-                            <!-- Abstract Map Grid -->
-                            <div class="absolute inset-0 opacity-10" style="background-image: 
+                        <!-- Driver Card -->
+                        <div
+                            class="absolute bottom-4 left-4 right-4 bg-white p-4 rounded-3xl shadow-lg border border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden"><img
+                                        src="assets/rider_image.jpg" class="w-full h-full object-cover"></div>
+                                <div>
+                                    <div class="font-bold text-sm">Chinedu O.</div>
+                                    <div class="text-[10px] text-slate-500">Kwik Bike • RED-102</div>
+                                </div>
+                                <div class="ml-auto text-green-600 font-bold text-xs">Arriving...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mockup 2: Android (Likosi -> Ita-Oluwo) -->
+                <div id="mockup-2"
+                    class="absolute transition-all duration-1000 ease-in-out transform w-[280px] h-[580px] bg-slate-800 rounded-[35px] border-[6px] border-slate-800 shadow-2xl overflow-hidden ring-1 ring-slate-400 z-10 opacity-60 scale-90 cursor-pointer"
+                    style="left: 50%; transform: translateX(-10%) rotate(3deg);">
+                    <!-- Hole Punch Camera -->
+                    <div class="absolute top-4 left-1/2 -translate-x-1/2 w-4 h-4 bg-black rounded-full z-30"></div>
+
+                    <!-- Screen Content -->
+                    <div class="w-full h-full bg-slate-50 relative flex flex-col font-sans">
+                        <!-- Map Layer -->
+                        <div class="absolute inset-0 bg-blue-50">
+                            <div class="absolute inset-0 opacity-10"
+                                style="background-image: linear-gradient(0deg, transparent 24%, #e2e8f0 25%, #e2e8f0 26%, transparent 27%, transparent 74%, #e2e8f0 75%, #e2e8f0 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, #e2e8f0 25%, #e2e8f0 26%, transparent 27%, transparent 74%, #e2e8f0 75%, #e2e8f0 76%, transparent 77%, transparent); background-size: 50px 50px;">
+                            </div>
+
+                            <!-- Route: Likosi -> Ita-Oluwo -->
+                            <svg class="absolute inset-0 w-full h-full">
+                                <path d="M220 80 C 180 200, 80 250, 60 480" fill="none" stroke="#00B0FF"
+                                    stroke-width="6" stroke-linecap="round" />
+                                <circle cx="220" cy="80" r="6" fill="#022C22" />
+                                <circle cx="60" cy="480" r="6" fill="#00B0FF" />
+                            </svg>
+
+                            <!-- Labels -->
+                            <div
+                                class="absolute top-16 right-4 bg-white px-3 py-1 rounded-md shadow-md text-xs font-bold text-slate-700 border border-slate-200">
+                                📍 Likosi
+                            </div>
+                            <div
+                                class="absolute bottom-20 left-4 bg-blue-600 text-white px-3 py-1 rounded-md shadow-md text-xs font-bold">
+                                🏁 Ita-Oluwo
+                            </div>
+                        </div>
+
+                        <!-- Trip Status -->
+                        <div
+                            class="absolute top-12 left-4 right-4 bg-white/90 backdrop-blur p-3 rounded-xl shadow-sm border border-slate-100 flex justify-between items-center">
+                            <span class="text-xs font-bold text-slate-500">Est. Arrival</span>
+                            <span class="text-lg font-bold text-slate-800">12:30 PM</span>
+                        </div>
+
+                        <!-- Driver Card -->
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-white p-5 rounded-t-3xl shadow-[0_-5px_20px_rgba(0,0,0,0.05)]">
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="font-bold text-lg">₦ 800</div>
+                                <div class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded font-bold">CASH</div>
+                            </div>
+                            <button class="w-full bg-brand-dark text-white py-3 rounded-xl font-bold text-sm">Cancel
+                                Trip</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section class="py-24 bg-white relative">
+                <div class="max-w-7xl mx-auto px-4 md:px-6">
+                    <div class="text-center max-w-2xl mx-auto mb-16 scroll-trigger">
+                        <span class="text-brand-primary font-bold tracking-wider text-sm uppercase">Simple
+                            Process</span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark mt-3">Riding is <span
+                                class="text-brand-primary">Easy</span></h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                        <!-- Connecting Line (Desktop) -->
+                        <div
+                            class="hidden md:block absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-primary/20 to-transparent -z-0">
+                        </div>
+
+                        <!-- Step 1 -->
+                        <div class="relative z-10 text-center scroll-trigger group">
+                            <div
+                                class="w-24 h-24 bg-white border-4 border-green-50 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                📱
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Request</h3>
+                            <p class="text-slate-500 px-4">Open the app, enter your destination, and choose your ride
+                                type.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative z-10 text-center scroll-trigger group delay-100">
+                            <div
+                                class="w-24 h-24 bg-white border-4 border-green-50 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                🛵
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Ride</h3>
+                            <p class="text-slate-500 px-4">Meet your verified rider and enjoy a safe trip to your
+                                destination.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative z-10 text-center scroll-trigger group delay-200">
+                            <div
+                                class="w-24 h-24 bg-white border-4 border-green-50 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
+                                💳
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Pay</h3>
+                            <p class="text-slate-500 px-4">Pay seamlessly with cash, transfer, or your KwikWallet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- App Mockup / Experience Section -->
+            <section id="download" class="py-24 bg-slate-50 relative overflow-hidden">
+                <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                    <div class="order-2 lg:order-1 scroll-trigger">
+                        <span class="text-brand-accent font-bold tracking-wider text-sm uppercase">The Experience</span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark mt-3 mb-6">Designed for <br>
+                            <span class="bg-gradient-to-r from-brand-accent to-brand-primary clip-text-image">Real
+                                Humans.</span>
+                        </h2>
+                        <p class="text-slate-600 text-lg mb-8">
+                            We built KwikRide to be intuitive. No complex menus, no hidden fees. Just a clean interface
+                            that
+                            gets you moving in seconds.
+                        </p>
+
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs">
+                                    ✓</div>
+                                <span class="font-medium text-slate-700">Live Trip Tracking</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs">
+                                    ✓</div>
+                                <span class="font-medium text-slate-700">Driver Details & Ratings</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs">
+                                    ✓</div>
+                                <span class="font-medium text-slate-700">24/7 In-App Support</span>
+                            </li>
+                        </ul>
+
+                        <button
+                            class="bg-brand-dark text-white px-8 py-4 rounded-xl font-bold hover:bg-black transition-transform hover:-translate-y-1 shadow-xl">Get
+                            the App</button>
+                    </div>
+
+                    <!-- CSS Phone Mockup -->
+                    <div class="order-1 lg:order-2 flex justify-center relative scroll-trigger">
+                        <!-- Phone Frame -->
+                        <div
+                            class="relative w-[300px] h-[600px] bg-slate-900 rounded-[40px] border-8 border-slate-900 shadow-2xl overflow-hidden ring-4 ring-slate-200/50">
+                            <!-- Dynamic Island/Notch -->
+                            <div
+                                class="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-7 bg-black rounded-full z-30 flex items-center justify-center gap-2 px-3">
+                                <div class="w-1 h-1 rounded-full bg-green-500 animate-pulse"></div>
+                            </div>
+
+                            <!-- Screen Content -->
+                            <div class="w-full h-full bg-slate-50 relative flex flex-col font-sans">
+
+                                <!-- Status Bar -->
+                                <div
+                                    class="h-12 px-6 flex justify-between items-end pb-2 bg-white/80 backdrop-blur z-20 text-xs font-bold text-slate-800">
+                                    <span>9:41</span>
+                                    <div class="flex gap-1.5">
+                                        <span>5G</span>
+                                        <div class="w-4 h-2.5 border border-slate-800 rounded-sm relative">
+                                            <div class="absolute inset-0.5 bg-slate-800"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Top Floating UI -->
+                                <div class="absolute top-16 left-4 right-4 z-20">
+                                    <div
+                                        class="bg-brand-dark/90 backdrop-blur text-white p-3 rounded-2xl flex items-center gap-3 shadow-lg animate-fade-in-up">
+                                        <div
+                                            class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center font-bold text-xs">
+                                            GO</div>
+                                        <div class="flex-1">
+                                            <div class="text-xs text-slate-300">Arriving in</div>
+                                            <div class="font-bold">2 mins</div>
+                                        </div>
+                                        <div class="text-xs bg-white/20 px-2 py-1 rounded">On Time</div>
+                                    </div>
+                                </div>
+
+                                <!-- Map Area (Simulated) -->
+                                <div class="flex-1 bg-slate-100 relative overflow-hidden group">
+                                    <!-- Abstract Map Grid -->
+                                    <div class="absolute inset-0 opacity-10" style="background-image: 
                                 linear-gradient(slate-300 1px, transparent 1px), 
                                 linear-gradient(90deg, slate-300 1px, transparent 1px); 
                                 background-size: 40px 40px;">
-                            </div>
+                                    </div>
 
-                            <!-- Roads -->
-                            <svg class="absolute inset-0 w-full h-full opacity-30">
-                                <path d="M-20 100 L320 150" stroke="white" stroke-width="20" />
-                                <path d="M150 -20 L120 620" stroke="white" stroke-width="20" />
-                                <path d="M-20 400 L320 350" stroke="white" stroke-width="15" />
-                            </svg>
+                                    <!-- Roads -->
+                                    <svg class="absolute inset-0 w-full h-full opacity-30">
+                                        <path d="M-20 100 L320 150" stroke="white" stroke-width="20" />
+                                        <path d="M150 -20 L120 620" stroke="white" stroke-width="20" />
+                                        <path d="M-20 400 L320 350" stroke="white" stroke-width="15" />
+                                    </svg>
 
-                            <!-- Route Line -->
-                            <svg class="absolute inset-0 w-full h-full"
-                                style="filter: drop-shadow(0 4px 8px rgba(0,200,83,0.3));">
-                                <path d="M100 150 Q 180 300 150 450" fill="none" stroke="#00C853" stroke-width="5"
-                                    stroke-linecap="round" stroke-dasharray="10 10" class="animate-pulse" />
-                                <!-- Car/Bike Icon Moving -->
-                                <circle cx="100" cy="150" r="10" fill="white" stroke="#00C853" stroke-width="3" />
-                                <circle cx="150" cy="450" r="10" fill="#022C22" border="2px solid white" />
-                            </svg>
+                                    <!-- Route Line -->
+                                    <svg class="absolute inset-0 w-full h-full"
+                                        style="filter: drop-shadow(0 4px 8px rgba(0,200,83,0.3));">
+                                        <path d="M100 150 Q 180 300 150 450" fill="none" stroke="#00C853"
+                                            stroke-width="5" stroke-linecap="round" stroke-dasharray="10 10"
+                                            class="animate-pulse" />
+                                        <!-- Car/Bike Icon Moving -->
+                                        <circle cx="100" cy="150" r="10" fill="white" stroke="#00C853"
+                                            stroke-width="3" />
+                                        <circle cx="150" cy="450" r="10" fill="#022C22" border="2px solid white" />
+                                    </svg>
 
-                            <!-- Driver Card -->
-                            <div
-                                class="absolute bottom-6 left-4 right-4 bg-white p-5 rounded-3xl shadow-xl animate-slide-in-right transform transition-transform hover:scale-105 duration-300">
-                                <div class="flex items-center gap-3 mb-4">
+                                    <!-- Driver Card -->
                                     <div
-                                        class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden ring-2 ring-brand-primary/20">
-                                        <img src="assets/rider_image.jpg" class="w-full h-full object-cover">
+                                        class="absolute bottom-6 left-4 right-4 bg-white p-5 rounded-3xl shadow-xl animate-slide-in-right transform transition-transform hover:scale-105 duration-300">
+                                        <div class="flex items-center gap-3 mb-4">
+                                            <div
+                                                class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden ring-2 ring-brand-primary/20">
+                                                <img src="assets/rider_image.jpg" class="w-full h-full object-cover">
+                                            </div>
+                                            <div>
+                                                <div class="font-bold text-slate-900">Musa Ibrahim</div>
+                                                <div class="text-xs text-slate-500">Bajaj Boxer • <span
+                                                        class="text-brand-primary bg-green-50 px-1 rounded">KWK-482</span>
+                                                </div>
+                                            </div>
+                                            <div class="ml-auto flex flex-col items-end">
+                                                <span class="text-brand-primary font-bold text-sm">★ 4.9</span>
+                                                <span class="text-xs text-slate-400">500+ trips</span>
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <button
+                                                class="bg-brand-primary/10 text-brand-primary py-2.5 rounded-xl text-sm font-bold hover:bg-brand-primary hover:text-white transition-colors">
+                                                Message
+                                            </button>
+                                            <button
+                                                class="bg-brand-dark text-white py-2.5 rounded-xl text-sm font-bold hover:bg-black transition-colors flex items-center justify-center gap-2">
+                                                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                                                Call
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <div class="font-bold text-slate-900">Musa Ibrahim</div>
-                                        <div class="text-xs text-slate-500">Bajaj Boxer • <span
-                                                class="text-brand-primary bg-green-50 px-1 rounded">KWK-482</span></div>
-                                    </div>
-                                    <div class="ml-auto flex flex-col items-end">
-                                        <span class="text-brand-primary font-bold text-sm">★ 4.9</span>
-                                        <span class="text-xs text-slate-400">500+ trips</span>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-2 gap-3">
-                                    <button
-                                        class="bg-brand-primary/10 text-brand-primary py-2.5 rounded-xl text-sm font-bold hover:bg-brand-primary hover:text-white transition-colors">
-                                        Message
-                                    </button>
-                                    <button
-                                        class="bg-brand-dark text-white py-2.5 rounded-xl text-sm font-bold hover:bg-black transition-colors flex items-center justify-center gap-2">
-                                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Call
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Driver Card -->
-            <div class="absolute bottom-6 left-4 right-4 bg-white p-4 rounded-2xl shadow-lg animate-slide-in-right">
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
-                        <img src="assets/rider_image.jpg" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <div class="h-3 w-24 bg-slate-200 rounded mb-1"></div>
-                        <div class="h-2 w-16 bg-slate-100 rounded"></div>
-                    </div>
-                    <div class="ml-auto text-green-600 font-bold text-sm">4.9 ★</div>
-                </div>
-                <div class="mt-4 flex gap-2">
+                    <!-- Driver Card -->
                     <div
-                        class="flex-1 h-10 bg-brand-primary/10 rounded-xl flex items-center justify-center text-xs font-bold text-brand-primary">
-                        Message</div>
-                    <div
-                        class="flex-1 h-10 bg-brand-dark rounded-xl flex items-center justify-center text-xs font-bold text-white">
-                        Call</div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="py-24 bg-brand-dark relative overflow-hidden text-white skew-y-3 -mt-20 pt-32 pb-32">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 relative z-10 -skew-y-3">
-            <div class="text-center max-w-2xl mx-auto mb-20 scroll-trigger">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">Why millions love <span
-                        class="text-brand-primary">KwikRide</span></h2>
-                <p class="text-slate-400 text-lg">We're not just another app. We're building the infrastructure for the
-                    future of movement across Africa.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div
-                    class="bg-white/5 border border-white/10 p-8 rounded-4xl hover:bg-white/10 transition-colors duration-300 scroll-trigger group">
-                    <div
-                        class="w-14 h-14 bg-brand-primary/20 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        🚀</div>
-                    <h3 class="text-xl font-bold mb-3">Lightning Fast</h3>
-                    <p class="text-slate-400 leading-relaxed">Beat the traffic with our optimized routing. Our riders
-                        know every corner of the city.</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div
-                    class="bg-white/5 border border-white/10 p-8 rounded-4xl hover:bg-white/10 transition-colors duration-300 scroll-trigger group delay-100">
-                    <div
-                        class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        💰</div>
-                    <h3 class="text-xl font-bold mb-3">Fair Pricing</h3>
-                    <p class="text-slate-400 leading-relaxed">No haggling. See the price before you ride. Pay with cash
-                        or transfer seamlessly.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div
-                    class="bg-white/5 border border-white/10 p-8 rounded-4xl hover:bg-white/10 transition-colors duration-300 scroll-trigger group delay-200">
-                    <div
-                        class="w-14 h-14 bg-orange-500/20 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        🛡️</div>
-                    <h3 class="text-xl font-bold mb-3">Safety Verified</h3>
-                    <p class="text-slate-400 leading-relaxed">All trips are insured. Riders are vetted, trained, and
-                        tracked in real-time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <h2 class="text-3xl md:text-5xl font-extrabold text-center text-brand-dark mb-16">Community <span
-                    class="text-brand-primary">Love</span></h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div class="border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-500">
-                            S</div>
-                        <div>
-                            <p class="font-bold text-brand-dark">Sarah A.</p>
-                            <p class="text-xs text-slate-400">Student</p>
+                        class="absolute bottom-6 left-4 right-4 bg-white p-4 rounded-2xl shadow-lg animate-slide-in-right">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+                                <img src="assets/rider_image.jpg" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <div class="h-3 w-24 bg-slate-200 rounded mb-1"></div>
+                                <div class="h-2 w-16 bg-slate-100 rounded"></div>
+                            </div>
+                            <div class="ml-auto text-green-600 font-bold text-sm">4.9 ★</div>
                         </div>
-                        <div class="ml-auto text-yellow-400">★★★★★</div>
-                    </div>
-                    <p class="text-slate-600">"Finally, a service I can trust. The riders are so polite and the bikes
-                        are actually clean!"</p>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-500">
-                            D</div>
-                        <div>
-                            <p class="font-bold text-brand-dark">David O.</p>
-                            <p class="text-xs text-slate-400">Entrepreneur</p>
+                        <div class="mt-4 flex gap-2">
+                            <div
+                                class="flex-1 h-10 bg-brand-primary/10 rounded-xl flex items-center justify-center text-xs font-bold text-brand-primary">
+                                Message</div>
+                            <div
+                                class="flex-1 h-10 bg-brand-dark rounded-xl flex items-center justify-center text-xs font-bold text-white">
+                                Call</div>
                         </div>
-                        <div class="ml-auto text-yellow-400">★★★★★</div>
                     </div>
-                    <p class="text-slate-600">"KwikRide changed my business. I can get to meetings across town in half
-                        the time. Total game changer."</p>
+                </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-24 bg-brand-dark relative overflow-hidden text-white skew-y-3 -mt-20 pt-32 pb-32">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 relative z-10 -skew-y-3">
+                <div class="text-center max-w-2xl mx-auto mb-20 scroll-trigger">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Why millions love <span
+                            class="text-brand-primary">KwikRide</span></h2>
+                    <p class="text-slate-400 text-lg">We're not just another app. We're building the infrastructure for
+                        the
+                        future of movement across Africa.</p>
                 </div>
 
-                <!-- Review 3 -->
-                <div class="border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow">
-                    <div class="flex items-center gap-4 mb-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-4xl hover:bg-white/10 transition-colors duration-300 scroll-trigger group">
                         <div
-                            class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-500">
-                            F</div>
-                        <div>
-                            <p class="font-bold text-brand-dark">Fatima L.</p>
-                            <p class="text-xs text-slate-400">Nurse</p>
-                        </div>
-                        <div class="ml-auto text-yellow-400">★★★★★</div>
+                            class="w-14 h-14 bg-brand-primary/20 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            🚀</div>
+                        <h3 class="text-xl font-bold mb-3">Lightning Fast</h3>
+                        <p class="text-slate-400 leading-relaxed">Beat the traffic with our optimized routing. Our
+                            riders
+                            know every corner of the city.</p>
                     </div>
-                    <p class="text-slate-600">"Safe, quick, and affordable. The app is super easy to use too. Highly
-                        recommend!"</p>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-4xl hover:bg-white/10 transition-colors duration-300 scroll-trigger group delay-100">
+                        <div
+                            class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            💰</div>
+                        <h3 class="text-xl font-bold mb-3">Fair Pricing</h3>
+                        <p class="text-slate-400 leading-relaxed">No haggling. See the price before you ride. Pay with
+                            cash
+                            or transfer seamlessly.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-8 rounded-4xl hover:bg-white/10 transition-colors duration-300 scroll-trigger group delay-200">
+                        <div
+                            class="w-14 h-14 bg-orange-500/20 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            🛡️</div>
+                        <h3 class="text-xl font-bold mb-3">Safety Verified</h3>
+                        <p class="text-slate-400 leading-relaxed">All trips are insured. Riders are vetted, trained, and
+                            tracked in real-time.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ Section -->
-    <section class="py-24 bg-brand-light rounded-t-[3rem]">
-        <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl font-extrabold text-center text-brand-dark mb-12">Frequently Asked Questions</h2>
+        <!-- Testimonials Section -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-center text-brand-dark mb-16">Community <span
+                        class="text-brand-primary">Love</span></h2>
 
-            <div class="space-y-4">
-                <details class="bg-white p-6 rounded-2xl shadow-sm group">
-                    <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none">
-                        How do I pay?
-                        <span class="transition-transform group-open:rotate-180">▼</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600">You can pay with cash, bank transfer, or fund your KwikRide wallet
-                        for cashless trips.</p>
-                </details>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-500">
+                                S</div>
+                            <div>
+                                <p class="font-bold text-brand-dark">Sarah A.</p>
+                                <p class="text-xs text-slate-400">Student</p>
+                            </div>
+                            <div class="ml-auto text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-slate-600">"Finally, a service I can trust. The riders are so polite and the
+                            bikes
+                            are actually clean!"</p>
+                    </div>
 
-                <details class="bg-white p-6 rounded-2xl shadow-sm group">
-                    <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none">
-                        Is it safe?
-                        <span class="transition-transform group-open:rotate-180">▼</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600">Absolutely. All riders are verified, rides are tracked via GPS, and
-                        every trip is insured.</p>
-                </details>
+                    <!-- Review 2 -->
+                    <div class="border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-500">
+                                D</div>
+                            <div>
+                                <p class="font-bold text-brand-dark">David O.</p>
+                                <p class="text-xs text-slate-400">Entrepreneur</p>
+                            </div>
+                            <div class="ml-auto text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-slate-600">"KwikRide changed my business. I can get to meetings across town in
+                            half
+                            the time. Total game changer."</p>
+                    </div>
 
-                <details class="bg-white p-6 rounded-2xl shadow-sm group">
-                    <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none">
-                        Where do you operate?
-                        <span class="transition-transform group-open:rotate-180">▼</span>
-                    </summary>
-                    <p class="mt-4 text-slate-600">We are currently launching in Ogijo and expanding to surrounding
-                        areas in Ogun State soon.</p>
-                </details>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-brand-dark pt-20 pb-10 border-t border-white/5 text-slate-400 text-sm">
-        <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex items-center gap-2">
-                    <img src="assets/logo.jpg" alt="KwikRide"
-                        class="h-8 w-8 rounded-lg grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all">
-                    <span>© 2026 KwikRide. All rights reserved.</span>
+                    <!-- Review 3 -->
+                    <div class="border border-slate-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-500">
+                                F</div>
+                            <div>
+                                <p class="font-bold text-brand-dark">Fatima L.</p>
+                                <p class="text-xs text-slate-400">Nurse</p>
+                            </div>
+                            <div class="ml-auto text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-slate-600">"Safe, quick, and affordable. The app is super easy to use too. Highly
+                            recommend!"</p>
+                    </div>
                 </div>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
-                    <a href="#" class="hover:text-white transition-colors">Terms</a>
-                    <a href="#" class="hover:text-white transition-colors">Twitter</a>
-                    <a href="#" class="hover:text-white transition-colors">Instagram</a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-24 bg-brand-light rounded-t-[3rem]">
+            <div class="max-w-3xl mx-auto px-4">
+                <h2 class="text-3xl font-extrabold text-center text-brand-dark mb-12">Frequently Asked Questions</h2>
+
+                <div class="space-y-4">
+                    <details class="bg-white p-6 rounded-2xl shadow-sm group">
+                        <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none">
+                            How do I pay?
+                            <span class="transition-transform group-open:rotate-180">▼</span>
+                        </summary>
+                        <p class="mt-4 text-slate-600">You can pay with cash, bank transfer, or fund your KwikRide
+                            wallet
+                            for cashless trips.</p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-2xl shadow-sm group">
+                        <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none">
+                            Is it safe?
+                            <span class="transition-transform group-open:rotate-180">▼</span>
+                        </summary>
+                        <p class="mt-4 text-slate-600">Absolutely. All riders are verified, rides are tracked via GPS,
+                            and
+                            every trip is insured.</p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-2xl shadow-sm group">
+                        <summary class="flex justify-between items-center font-bold text-lg cursor-pointer list-none">
+                            Where do you operate?
+                            <span class="transition-transform group-open:rotate-180">▼</span>
+                        </summary>
+                        <p class="mt-4 text-slate-600">We are currently launching in Ogijo and expanding to surrounding
+                            areas in Ogun State soon.</p>
+                    </details>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-brand-dark pt-20 pb-10 border-t border-white/5 text-slate-400 text-sm">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/logo.jpg" alt="KwikRide"
+                            class="h-8 w-8 rounded-lg grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all">
+                        <span>© 2026 KwikRide. All rights reserved.</span>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms</a>
+                        <a href="#" class="hover:text-white transition-colors">Twitter</a>
+                        <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    <!-- GSAP Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="script.js?v=5"></script>
+        <!-- GSAP Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="script.js?v=5"></script>
 </body>
 
 </html>
